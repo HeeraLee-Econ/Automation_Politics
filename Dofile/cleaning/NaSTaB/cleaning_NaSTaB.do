@@ -105,7 +105,6 @@ local vars pga001 pga003 pga004 pga005 pga006 pga007 pga008 pga009 pga010 pga011
 
 misstable summarize `vars'
 
-
 * control variable 
 * 1) gender - female =1 , male =0 
 tab pwgen, m  // 1: 남, 2: 여, (결측없음)
@@ -129,3 +128,4 @@ replace edu = 1 if pwedu >=6 & pwedu <=8 // 4년제대졸자 이상
 
 tab pwedu, m 
 tab edu, m 
+
