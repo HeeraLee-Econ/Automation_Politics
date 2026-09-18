@@ -13,4 +13,6 @@ Dofile/*.smcl
 *.stswp
 ~*.do.stswp
 ~*.stswp
+
 Dofile/Inbox/
+Dofile/cleaning/Inbox/
