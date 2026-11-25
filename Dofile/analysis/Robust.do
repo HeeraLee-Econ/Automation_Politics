@@ -24,7 +24,6 @@ global fixed i.year
 global control aged_share college_share 
 global additional immi_share manu_share migra_share 
 *******************************************************************************
-
 * controlling for pretrend 용 변수
 * SD pretrend: 각 코호트의 직전 SD값 (bysort로 lag)
 foreach v in SD_conserv1_p SD_conserv2_p SD_turnout {
@@ -79,7 +78,6 @@ esttab m* using "valid_pretrend.csv", replace ///
     b(%8.3f) se(%8.3f) ///
     star(* 0.10 ** 0.05 *** 0.01) ///
     label nogap
-
 *******************************************************************************
 * Robustness check 
 *******************************************************************************
